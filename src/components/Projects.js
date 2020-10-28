@@ -9,7 +9,7 @@ class Projects extends React.Component {
         data:[
             {
                 title: "AIsha - Artificial Intelligence Self Help App",
-                description: "A machine learning chatbot which analyses, responds to, and records users' emotions (joy, sadness, anger and fear)",
+                description: "A machine learning chatbot which analyses, responds to, and records users' daily emotions (joy, sadness, anger and fear). My final project at Makers Academy",
                 tech: "React, Flask, Python",
                 link: "https://github.com/aravzpatel/AIsha",
                 key: 1
@@ -17,21 +17,21 @@ class Projects extends React.Component {
             {
                 title: "Jem Photo Share",
                 description: "A hybird of Instagram and Facebook social media",
-                tech: "Rails, Ruby",
+                tech: "Ruby, Rails, MongoDB",
                 link: "https://github.com/Joanne0330/Jem-Photoshare",
                 key: 2
             },
             {
                 title: "Tetris Interactive Game",
-                description: "Traditional Tetris Game",
+                description: "An interactive, traditional tetris game made by pure Vanilla JavaScript",
                 tech: "JavaScript",
                 link: "https://github.com/Joanne0330/Tetris-interactive-game",
                 key: 3
             },
             {
                 title: "Dreambook",
-                description: "A mock Facebook",
-                tech: "Rails, Ruby",
+                description: "A mock Facebook social media. Group project at Makers Academy",
+                tech: "Ruby, Rails, PostgresSQL",
                 link: "https://github.com/katieljones/acebook-dreambook-2020",
                 key: 4
             },
@@ -42,6 +42,27 @@ class Projects extends React.Component {
                 link: "https://github.com/Joanne0330/shopping-list-react",
                 key: 5
             },
+            {
+                title: "My Portfolio",
+                description: "This website you're looking at!",
+                tech: "React",
+                link: "https://github.com/Joanne0330/My-Portfolio",
+                key: 6
+            },
+            {
+                title: "Bank Tech Test",
+                description: "A demonstration of clean code, unit and feature testing, written in Ruby. User can make desposti and withraw of a bank account, and print receipts and statements ",
+                tech: "Ruby",
+                link: "https://github.com/Joanne0330/BankTechTest",
+                key: 7
+            },
+            {
+                title: "Takeaway Challenge",
+                description: "A demonstration of clean code, unit tests, written in JavaScript. User can order meals from a menu and have price calculated",
+                tech: "JavaScript",
+                link: "https://github.com/Joanne0330/Takeaway-JavaScript",
+                key: 8
+            }
             
 
 

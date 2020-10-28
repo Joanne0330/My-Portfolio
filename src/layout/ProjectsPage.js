@@ -3,8 +3,15 @@ import Projects from "../components/Projects";
 
 export default function ProjectsPage() {
     return (
-        <div>
-            <Projects />
+        <div style={{display: 'center'}}>
+            {/* <container style={projectsStyle}> */}
+                <Projects />
+            {/* </container> */}
         </div>
     )
 }
+
+// const projectsStyle = {
+//     display: 'center',
+    
+// }

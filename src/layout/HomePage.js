@@ -1,16 +1,17 @@
 import React from "react";
-import Projects from "../components/Projects";
+import Home from "../components/Home";
 
 export default function ProjectsPage() {
     return (
         <div>
-                <header style={ProjectPageStyle}><h1>Projects</h1></header>
-                <Projects />
+                <header style={HomePageStyle}><h1>Joanne Chen</h1></header>
+                <Home />
+
         </div>
     )
 }
 
-const ProjectPageStyle = {
+const HomePageStyle = {
     margin: '2rem', 
     backgroundColor: 'darkgray', 
     padding: '2rem'

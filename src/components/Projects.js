@@ -42,7 +42,7 @@ class Projects extends React.Component {
             {
                 title: "Dreambook",
                 src: Dreambook,
-                description: "A mock Facebook social media. Group project at Makers Academy",
+                description: "A simple Facebook-like social media app where users can make posts and comments. Group project at Makers Academy",
                 tech: "Ruby, Rails, PostgresSQL",
                 link: "https://github.com/katieljones/acebook-dreambook-2020",
                 key: 4
@@ -58,7 +58,7 @@ class Projects extends React.Component {
             {
                 title: "Bank Tech Test",
                 src: BankTechTest,
-                description: "A demonstration of clean code, unit and feature testing, written in Ruby. User can make desposti and withraw of a bank account, and print receipts and statements ",
+                description: "A demonstration of clean code, unit and feature testing, written in Ruby. User can make desposites and withraws, and print receipts and statements ",
                 tech: "Ruby",
                 link: "https://github.com/Joanne0330/BankTechTest",
                 key: 6
@@ -66,7 +66,7 @@ class Projects extends React.Component {
             {
                 title: "Takeaway Challenge",
                 src: Takeaway,
-                description: "A demonstration of clean code, unit tests, written in JavaScript. User can order meals from a menu and have price calculated",
+                description: "A demonstration of clean code, unit tests, written in JavaScript. User can order meals from a menu and have the total price calculated",
                 tech: "JavaScript",
                 link: "https://github.com/Joanne0330/Takeaway-JavaScript",
                 key: 7
@@ -84,7 +84,8 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <div style={pageStyle}>            
+            
+            <div style={pageStyle}>     
               {this.state.data.map((project) => {
                   console.log(project)
                 return (
@@ -94,7 +95,6 @@ class Projects extends React.Component {
                     <Card.Body>
                         <Card.Title>{project.title}</Card.Title>
                         <Card.Text>{project.description}</Card.Text>
-                        {/* <Card.Link href={project.link} target="_blank">See the code</Card.Link> */}
                     </Card.Body>
                     <Card.Footer className="text-muted" style={{margin: '0.2rem'}}>
                         {project.tech}
@@ -121,7 +121,7 @@ const cardStyle = {
     padding: '2rem',
     margin: '2rem',
     // boxShadow: '15px 17px 12px #a1a0a0',
-    boxShadow: '18px 18px 18px #778899'
+    boxShadow: '25px 25px 20px #778899'
 }
 
 const pageStyle = {

@@ -114,13 +114,12 @@ class Projects extends React.Component {
 export default Projects;
 
 const cardStyle = {
-    minWidth: '20rem',
-    maxWidth: '20rem',
-    minHeight: '40rem',
-    maxHeight: '40rem',
+    minWidth: '22rem',
+    maxWidth: '22rem',
+    minHeight: '38rem',
+    maxHeight: '38rem',
     padding: '2rem',
     margin: '2rem',
-    // boxShadow: '15px 17px 12px #a1a0a0',
     boxShadow: '25px 25px 20px #778899'
 }
 

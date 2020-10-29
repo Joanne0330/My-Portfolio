@@ -21,31 +21,34 @@ export default function Home() {
                 </Carousel.Item>
 
                  <Carousel.Item style={slideStyle}>
-
-                    {/* <Carousel.Caption> */}
                     <br></br>
-                    <h1 style={{color: '#343a40'}}>Stack Experience</h1>
+                    <br></br>
+                    <h2 style={{color: '#343a40'}}>Stack & Experience</h2>
                     <br></br>
                     <br></br>
                     <ul style={{color: '#343a40', textAlign: 'left'}}>
                         <li><strong>Languages:</strong> Ruby, JavaScript, Python, SQL, HTML, CSS</li>
                         <li><strong>Framework, libraries, databases</strong> React, Rails, Flask, Postgres, MongoDB</li>
-                        <li><strong>TDD Testing:</strong> RSpec, Jasmine, Jest, Unittest,Capybara</li>
-                        <li><strong>Others:</strong>Command Line, Github, TravisCI, Heroku, AWS</li>
-                        <li><strong>Methodoloty: </strong>AGILE working environment, pair 	programming, daily stand-ups and retros, planning 2-day sprints, MVP, Trello Board and various project design by using diagrams and wireframe</li>
+                        <li><strong>TDD Testing:</strong> RSpec, Jasmine, Jest, Unittest, Capybara</li>
+                        <li><strong>Other Tech:</strong>Command Line, Github, TravisCI, Heroku, AWS</li>
+                        <li><strong>Methodology: </strong>AGILE working environment, pair programming, daily stand-ups and retros, planning 2-day sprints, MVP, Trello Board and various project design by using diagrams and wireframe</li>
+                        <li><strong>Public Projects: </strong>AgeUK</li>
                     </ul>
-                    {/* </Carousel.Caption> */}
                 </Carousel.Item>
-                {/* <Carousel.Item>
 
-
-                    <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item> */}
-                </Carousel>
-
+                <Carousel.Item style={slideStyle}>
+                    <br></br>
+                    <h2 style={{color: '#343a40'}}>About me...</h2>
+                    <br></br>
+                    <p style={{color: '#343a40', padding: '2rem'}}>
+                        Before discovering my passion for coding, I had an active career as a classical violinist, performing concerts all over the world with orchestras such as the BBC Symphony Orchestra, Royal Philharmonic Orchestra, London Philharmonic Orchestra, and many more. 
+                        I was also a dedicated violin teacher, patient and methodical, helping students age 7-18 to achieve their goals and develop their musical talent. I am now transforming my passion and problem solving skills to software development.
+                    <br></br>
+                    <br></br>
+                        In my spare time I love to travel, absorbing nature and culture wherever I go. I'm also a foodie who likes to cook and explore different recipes. I'm fluent in both English and Mandarin Chinese, and I speak a little French.
+                    </p>
+                </Carousel.Item>
+            </Carousel>
         </div>
     )
 }

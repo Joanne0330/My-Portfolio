@@ -9,6 +9,7 @@ import Dreambook from "../images/Dreambook.png";
 import ShoppingList from "../images/ShoppingList.png";
 import BankTechTest from "../images/BankTechTest.png";
 import Takeaway from "../images/Takeaway.png";
+import Portfolio from "../images/Portfolio.png"
 
 class Projects extends React.Component {
     constructor(props) {
@@ -73,6 +74,7 @@ class Projects extends React.Component {
             },
             {
                 title: "My Portfolio",
+                src: Portfolio,
                 description: "This website you're looking at!",
                 tech: "React",
                 link: "https://github.com/Joanne0330/My-Portfolio",

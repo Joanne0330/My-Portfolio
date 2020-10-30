@@ -58,12 +58,12 @@ export default function Home() {
 
 const slideStyle = {
     backgroundColor: 'white',
-    maxWidth: '50%', 
+    maxWidth: '65%', 
     minHeight: '30rem',
     // maxHeight: '30rem',
     border: 'solid', 
     borderColor: 'white', 
-    marginLeft: '25%',
+    marginLeft: '17%',
     boxShadow: '25px 25px 20px #778899', 
     marginBottom: '3%', 
     // paddingBottom: '10rem'

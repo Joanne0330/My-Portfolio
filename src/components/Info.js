@@ -23,15 +23,15 @@ export default function Info() {
                     className="fab fa-github"
                     variant="secondary"
                     size="lg" block
-                    ><p style={{fontSize: '18px'}}>see my GitHub CV</p>
+                    ><p style={{fontSize: '18px'}}>GitHub CV</p>
                 </Button>
                 <Button
                     href="https://www.linkedin.com/in/joanne-chen-1253319b"
                     target="_blank"
-                    className="fab fa-github"
+                    className="fab fa-linkedin"
                     variant="secondary"
                     size="lg" block
-                    ><p style={{fontSize: '18px'}}>see my LinkedIn profile</p>
+                    ><p style={{fontSize: '18px'}}>LinkedIn Profile</p>
                 </Button>
 
                 </Card.Body>

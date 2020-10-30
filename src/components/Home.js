@@ -1,11 +1,13 @@
 import React from "react";
 import '../App.css';
 import Carousel from "react-bootstrap/Carousel";
+import Container from "react-bootstrap/Container";
 import Joanne from "../images/Joanne.png";
 
 export default function Home() {
     return (
         <div style={{backgroundColor: 'gainsboro'}}>
+            <Container style={{paddingBottom: '12rem', paddingTop: '2rem'}}>
             <Carousel>
                 <Carousel.Item style={slideStyle}>
                     <img
@@ -30,9 +32,9 @@ export default function Home() {
                         <li><strong>Languages:</strong> Ruby, JavaScript, Python, SQL, HTML, CSS</li>
                         <li><strong>Framework, libraries, databases</strong> React, Rails, Flask, Postgres, MongoDB</li>
                         <li><strong>TDD Testing:</strong> RSpec, Jasmine, Jest, Unittest, Capybara</li>
-                        <li><strong>Other Tech:</strong>Command Line, Github, TravisCI, Heroku, AWS</li>
-                        <li><strong>Methodology: </strong>AGILE working environment, pair programming, daily stand-ups and retros, planning 2-day sprints, MVP, Trello Board and various project design by using diagrams and wireframe</li>
-                        <li><strong>Public Projects: </strong>AgeUK</li>
+                        <li><strong>Other Tech:</strong> Command Line, Github, TravisCI, Heroku, AWS</li>
+                        <li><strong>Methodology:</strong> AGILE working environment, pair programming, daily stand-ups and retros, planning 2-day sprints, MVP, Trello Board and various project design by using diagrams and wireframe</li>
+                        <li><strong>Public Projects:</strong> AgeUK</li>
                     </ul>
                 </Carousel.Item>
 
@@ -49,6 +51,7 @@ export default function Home() {
                     </p>
                 </Carousel.Item>
             </Carousel>
+            </Container>
         </div>
     )
 }
@@ -57,10 +60,11 @@ const slideStyle = {
     backgroundColor: 'white',
     maxWidth: '50%', 
     minHeight: '30rem',
+    // maxHeight: '30rem',
     border: 'solid', 
     borderColor: 'white', 
     marginLeft: '25%',
     boxShadow: '25px 25px 20px #778899', 
     marginBottom: '3%', 
-    paddingBottom: '6rem'
+    // paddingBottom: '10rem'
 }

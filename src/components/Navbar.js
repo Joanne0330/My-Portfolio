@@ -10,6 +10,7 @@ function TopNavBar() {
                 <Nav className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/projects">Projects</Nav.Link>
+                    <Nav.Link href="/info">More Info</Nav.Link>
                 </Nav>
         </Navbar>
     );

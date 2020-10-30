@@ -24,3 +24,7 @@
 .App-link {
   color: #61dafb;
 }
+
+.nav-link:hover {
+  color: 'red'
+}

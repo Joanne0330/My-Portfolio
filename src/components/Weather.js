@@ -17,7 +17,7 @@ export class Weather extends React.Component {
             .then(response => response.json())
             .then(data => {
                 console.log(data)
-                this.setState({temperature: data.main.temp, city: data.name, weather: data.weather[0].main})
+                this.setState({temperature: data.main.temp, city: data.name, weather: data.weather[0].description})
 
             })
     }
@@ -25,7 +25,7 @@ export class Weather extends React.Component {
     render() {
         return(
             <div>
-                <h5>I live in {this.state.city} and the weather is: {this.state.weather} with temperature {this.state.temperature} degrees Celcius</h5>
+                <h5>Location: {this.state.city} | Weather: {this.state.weather} | Temperature: {this.state.temperature}C˚</h5>
             </div>
         )
     }

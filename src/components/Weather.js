@@ -21,7 +21,7 @@ export class Weather extends React.Component {
 
             })
     }
-   
+    
     render() {
         return(
             <div>

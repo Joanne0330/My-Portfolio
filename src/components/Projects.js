@@ -1,6 +1,10 @@
 import React from "react";
 import '../App.css';
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
+
+import FilterBar from './Filterbar';
+import ProjectCards from './ProjectCards';
+
 import AIsha from "../images/AIsha.png";
 import Jem from "../images/Jem.png";
 import Tetris from "../images/Tetris.png";
@@ -14,6 +18,8 @@ class Projects extends React.Component {
     constructor(props) {
     super(props);
     this.state = {
+        // filteredProjects: [],
+        filteringProject: {},
         data:[
             {
                 title: "AIsha - Artificial Intelligence Self Help App",
@@ -21,7 +27,8 @@ class Projects extends React.Component {
                 description: "A machine learning chatbot which analyses, responds to, and tracks users' daily emotions (joy, sadness, anger and fear) in a form of graph. This was my final project at Makers Academy",
                 tech: "React, Flask, Python",
                 link: "https://github.com/aravzpatel/AIsha",
-                key: 1
+                key: 1,
+                language: "JavaScript"
             },
             {
                 title: "Jem Photo Share",
@@ -29,7 +36,8 @@ class Projects extends React.Component {
                 description: "A hybird of Instagram and Facebook social media",
                 tech: "Ruby, Rails, MongoDB",
                 link: "https://github.com/Joanne0330/Jem-Photoshare",
-                key: 2
+                key: 2,
+                language: "Ruby"
             },
             {
                 title: "Tetris Interactive Game",
@@ -37,7 +45,9 @@ class Projects extends React.Component {
                 description: "An interactive, traditional tetris game built with pure Vanilla JavaScript",
                 tech: "JavaScript",
                 link: "https://github.com/Joanne0330/Tetris-interactive-game",
-                key: 3
+                key: 3,
+                language: "JavaScript"
+            
             },
             {
                 title: "Dreambook",
@@ -45,7 +55,9 @@ class Projects extends React.Component {
                 description: "A simple Facebook-like social media app where users can make posts and comments. Group project at Makers Academy",
                 tech: "Ruby, Rails, PostgresSQL",
                 link: "https://github.com/katieljones/acebook-dreambook-2020",
-                key: 4
+                key: 4,
+                language: "Ruby"
+            
             },
             {
                 title: "Shopping List",
@@ -53,7 +65,9 @@ class Projects extends React.Component {
                 description: "Front-end app, perfect to use as shopping or todo list",
                 tech: "React",
                 link: "https://github.com/Joanne0330/shopping-list-react",
-                key: 5
+                key: 5,
+                language: "JavaScript"
+            
             },
             {
                 title: "Bank Tech Test",
@@ -61,7 +75,8 @@ class Projects extends React.Component {
                 description: "A demonstration of clean code, unit and feature testing, written in Ruby. User can make desposites and withraws, and print receipts and statements ",
                 tech: "Ruby",
                 link: "https://github.com/Joanne0330/BankTechTest",
-                key: 6
+                key: 6,
+                language: "Ruby"
             },
             {
                 title: "Takeaway Challenge",
@@ -69,7 +84,8 @@ class Projects extends React.Component {
                 description: "A demonstration of clean code, unit tests, written in JavaScript. User can order meals from a menu and have the total price calculated",
                 tech: "JavaScript",
                 link: "https://github.com/Joanne0330/Takeaway-JavaScript",
-                key: 7
+                key: 7,
+                language: "JavaScript"
             },
             {
                 title: "My Portfolio",
@@ -77,36 +93,61 @@ class Projects extends React.Component {
                 description: "This website you're looking at!",
                 tech: "React",
                 link: "https://github.com/Joanne0330/My-Portfolio",
-                key: 8
+                key: 8,
+                language: "JavaScript"
             },   
             ]
         }
-}
+    }
+
+    filter = (language) => {
+        console.log('langugae', language)
+        console.log(this.state.data)
+        const filteredProjects = this.state.data.filter(filteringProject => {
+            return filteringProject.language.includes(language)
+        })
+        console.log("hahaha", filteredProjects)
+        this.setState({
+            data: filteredProjects
+        })
+
+    }
+
+
 
     render() {
         return (
-            
-            <div style={pageStyle}>     
-              {this.state.data.map((project) => {
-                  console.log(project)
-                return (
+            <div> 
+             
+                <div style={{display: 'center'}} >
+                    <FilterBar onChange={this.filter} />
+                </div>
 
-                <Card key={project.key} style={cardStyle}>
-                    <Card.Img src={project.src} />
-                    <Card.Body>
-                        <Card.Title>{project.title}</Card.Title>
-                        <Card.Text>{project.description}</Card.Text>
-                    </Card.Body>
-                    <Card.Footer className="text-muted" style={{margin: '0.2rem'}}>
-                        {project.tech}
-                    </Card.Footer>    
-                    <Card.Footer style={{margin: '0.2rem'}}>
-                        <Card.Link href={project.link} target="_blank">See the code</Card.Link>
-                    </Card.Footer>
-                </Card>
+                {/* <div style={pageStyle} > */}
+                    <ProjectCards data={this.state.data}/>
+                {/* </div> */}
+                {/* <div style={pageStyle} >
+                    {this.state.data.map((project) => {
+                        console.log(project)
+                        return (
 
-                )    
-              })}
+                            <Card key={project.key} style={cardStyle}>
+                                <Card.Img src={project.src} />
+                                <Card.Body>
+                                    <Card.Title>{project.title}</Card.Title>
+                                    <Card.Text>{project.description}</Card.Text>
+                                </Card.Body>
+                                <Card.Footer className="text-muted" style={{margin: '0.2rem'}}>
+                                    {project.tech}
+                                </Card.Footer>    
+                                <Card.Footer style={{margin: '0.2rem'}}>
+                                    <Card.Link href={project.link} target="_blank">See the code</Card.Link>
+                                </Card.Footer>
+                            </Card>
+                        )    
+                    })}
+                 </div>   
+                     */}
             </div>
         )
     }
@@ -114,15 +155,15 @@ class Projects extends React.Component {
 
 export default Projects;
 
-const cardStyle = {
-    minWidth: '22rem',
-    maxWidth: '22rem',
-    minHeight: '38rem',
-    maxHeight: '38rem',
-    padding: '2rem',
-    margin: '2rem',
-    boxShadow: '25px 25px 20px #778899'
-}
+// const cardStyle = {
+//     minWidth: '22rem',
+//     maxWidth: '22rem',
+//     minHeight: '38rem',
+//     maxHeight: '38rem',
+//     padding: '2rem',
+//     margin: '2rem',
+//     boxShadow: '25px 25px 20px #778899'
+// }
 
 const pageStyle = {
     display: 'flex', 

@@ -18,8 +18,7 @@ class Projects extends React.Component {
     constructor(props) {
     super(props);
     this.state = {
-        // filteredProjects: [],
-        filteringProject: {},
+        newDataArr: [],
         data:[
             {
                 title: "AIsha - Artificial Intelligence Self Help App",
@@ -96,78 +95,41 @@ class Projects extends React.Component {
                 key: 8,
                 language: "JavaScript"
             },   
-            ]
+            ],
         }
+
     }
 
     filter = (language) => {
         console.log('langugae', language)
         console.log(this.state.data)
-        const filteredProjects = this.state.data.filter(filteringProject => {
-            return filteringProject.language.includes(language)
-        })
-        console.log("hahaha", filteredProjects)
-        this.setState({
-            data: filteredProjects
-        })
+        this.setState({newDataArr: this.state.data})
+        if(language === "All") {
+            this.setState({data: this.state.newDataArr})
 
+        } else {
+            this.setState({data: this.state.newDataArr})
+            const filteredProjects = this.state.data.filter(filteringProject => filteringProject.language === language)
+            console.log("hahaha", filteredProjects)
+            this.setState({
+                data: filteredProjects
+            })
+        }
     }
 
-
-
+    
+    
+    
     render() {
         return (
             <div> 
-             
                 <div style={{display: 'center'}} >
                     <FilterBar onChange={this.filter} />
                 </div>
-
-                {/* <div style={pageStyle} > */}
-                    <ProjectCards data={this.state.data}/>
-                {/* </div> */}
-                {/* <div style={pageStyle} >
-                    {this.state.data.map((project) => {
-                        console.log(project)
-                        return (
-
-                            <Card key={project.key} style={cardStyle}>
-                                <Card.Img src={project.src} />
-                                <Card.Body>
-                                    <Card.Title>{project.title}</Card.Title>
-                                    <Card.Text>{project.description}</Card.Text>
-                                </Card.Body>
-                                <Card.Footer className="text-muted" style={{margin: '0.2rem'}}>
-                                    {project.tech}
-                                </Card.Footer>    
-                                <Card.Footer style={{margin: '0.2rem'}}>
-                                    <Card.Link href={project.link} target="_blank">See the code</Card.Link>
-                                </Card.Footer>
-                            </Card>
-                        )    
-                    })}
-                 </div>   
-                     */}
+                    <ProjectCards data={this.state.data}/>  
             </div>
         )
     }
 }
 
 export default Projects;
-
-// const cardStyle = {
-//     minWidth: '22rem',
-//     maxWidth: '22rem',
-//     minHeight: '38rem',
-//     maxHeight: '38rem',
-//     padding: '2rem',
-//     margin: '2rem',
-//     boxShadow: '25px 25px 20px #778899'
-// }
-
-const pageStyle = {
-    display: 'flex', 
-    flexDirection: 'row', 
-    flexWrap: 'wrap',
-    justifyContent: 'space-evenly'
-}

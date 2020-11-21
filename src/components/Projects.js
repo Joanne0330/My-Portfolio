@@ -32,7 +32,7 @@ class Projects extends React.Component {
             {
                 title: "Jem Photo Share",
                 src: Jem,
-                description: "A hybird of Instagram and Facebook social media",
+                description: "A hybrid of Instagram and Facebook social media",
                 tech: "Ruby, Rails, MongoDB",
                 link: "https://github.com/Joanne0330/Jem-Photoshare",
                 key: 2,
@@ -101,14 +101,24 @@ class Projects extends React.Component {
     }
 
     filter = (language) => {
-        console.log('langugae', language)
-        console.log(this.state.data)
-        this.setState({newDataArr: this.state.data})
-        if(language === "All") {
-            this.setState({data: this.state.newDataArr})
+        console.log('selected langugae', language)
+        console.log('data is:', this.state.data)
 
-        } else {
+        this.setState({newDataArr: this.state.data})
+        console.log("newDataArr is now:", this.state.newDataArr)
+        
+ 
+        if(language === "All") {
+
             this.setState({data: this.state.newDataArr})
+            console.log('data after click All', this.state.data)
+     
+        } else {
+            // console.log("newDataArr after click ruby", this.state.newDataArr)
+            // console.log("data before resetting:", this.state.data)
+ 
+            // this.setState({data: this.state.newDataArr});
+            // console.log("data after resetting:", this.state.data)
             const filteredProjects = this.state.data.filter(filteringProject => filteringProject.language === language)
             console.log("hahaha", filteredProjects)
             this.setState({

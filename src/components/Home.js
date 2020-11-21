@@ -29,7 +29,7 @@ export default function Home() {
                     <br></br>
                     <br></br>
                     <ul style={{color: '#343a40', textAlign: 'left'}}>
-                        <li><strong>Languages:</strong> Ruby, JavaScript, Python, SQL, HTML, CSS</li>
+                        <li><strong>Languages:</strong> Ruby, JavaScript, SQL, HTML, CSS, basic Python</li>
                         <li><strong>Framework, libraries, databases</strong> React, Rails, Flask, Postgres, MongoDB</li>
                         <li><strong>TDD Testing:</strong> RSpec, Jasmine, Jest, Unittest, Capybara</li>
                         <li><strong>Other Tech:</strong> Command Line, Github, TravisCI, Heroku, AWS</li>

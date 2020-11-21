@@ -14,7 +14,7 @@ function App() {
           <TopNavBar />
           <Route exact path={process.env.PUBLIC_URL + "/"} component={HomePage}/>
           <Route path={process.env.PUBLIC_URL + "/projects"} component={ProjectsPage} />
-        <Route path={process.env.PUBLIC_URL + "/info"} component={InfoPage} />
+          <Route path={process.env.PUBLIC_URL + "/info"} component={InfoPage} />
         </div>
       </Router>
   );

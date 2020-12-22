@@ -13,6 +13,7 @@ import ShoppingList from "../images/ShoppingList.png";
 import BankTechTest from "../images/BankTechTest.png";
 import Takeaway from "../images/Takeaway.png";
 import Portfolio from "../images/Portfolio.png"
+import DevConnector from "../images/DevConnector.png"
 
 class Projects extends React.Component {
     constructor(props) {
@@ -49,12 +50,21 @@ class Projects extends React.Component {
             
             },
             {
+                title: "Dev Connector",
+                src: DevConnector,
+                description: "A social network for developers, showcasing their experiences, education, and Github projects. Able to make posts and comments to each other ",
+                tech: "React, Redux, Node.js, Express, MongoDB",
+                link: "https://github.com/Joanne0330/DevConnectorMERN",
+                key: 4,
+                language: "JavaScript"
+            },
+            {
                 title: "Dreambook",
                 src: Dreambook,
                 description: "A simple Facebook-like social media app where users can make posts and comments. Group project at Makers Academy",
                 tech: "Ruby, Rails, PostgresSQL",
                 link: "https://github.com/katieljones/acebook-dreambook-2020",
-                key: 4,
+                key: 5,
                 language: "Ruby"
             
             },
@@ -64,7 +74,7 @@ class Projects extends React.Component {
                 description: "Front-end app, perfect to use as shopping or todo list",
                 tech: "React",
                 link: "https://github.com/Joanne0330/shopping-list-react",
-                key: 5,
+                key: 6,
                 language: "JavaScript"
             
             },
@@ -74,7 +84,7 @@ class Projects extends React.Component {
                 description: "A demonstration of clean code, unit and feature testing, written in Ruby. User can make desposites and withraws, and print receipts and statements ",
                 tech: "Ruby",
                 link: "https://github.com/Joanne0330/BankTechTest",
-                key: 6,
+                key: 7,
                 language: "Ruby"
             },
             {
@@ -83,7 +93,7 @@ class Projects extends React.Component {
                 description: "A demonstration of clean code, unit tests, written in JavaScript. User can order meals from a menu and have the total price calculated",
                 tech: "JavaScript",
                 link: "https://github.com/Joanne0330/Takeaway-JavaScript",
-                key: 7,
+                key: 8,
                 language: "JavaScript"
             },
             {
@@ -92,7 +102,7 @@ class Projects extends React.Component {
                 description: "This website you're looking at!",
                 tech: "React",
                 link: "https://github.com/Joanne0330/My-Portfolio",
-                key: 8,
+                key: 9,
                 language: "JavaScript"
             },   
             ],

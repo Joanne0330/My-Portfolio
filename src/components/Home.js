@@ -29,8 +29,8 @@ export default function Home() {
                     <br></br>
                     <br></br>
                     <ul style={{color: '#343a40', textAlign: 'left'}}>
-                        <li><strong>Languages:</strong> Ruby, JavaScript, SQL, HTML, CSS, basic Python</li>
-                        <li><strong>Framework, libraries, databases</strong> React, Rails, Flask, Postgres, MongoDB</li>
+                        <li><strong>Languages:</strong> JavaScript, Node.js, Ruby, SQL, HTML, CSS, basic Python</li>
+                        <li><strong>Framework, libraries, databases</strong> React, Redux, Express, Rails, Flask, Postgres, MongoDB</li>
                         <li><strong>TDD Testing:</strong> RSpec, Jasmine, Jest, Unittest, Capybara</li>
                         <li><strong>Other Tech:</strong> Command Line, Github, TravisCI, Heroku, AWS</li>
                         <li><strong>Methodology:</strong> AGILE working environment, pair programming, daily stand-ups and retros, planning 2-day sprints, MVP, Trello Board and various project design by using diagrams and wireframe</li>

@@ -18,7 +18,7 @@ export default function Home() {
                     />
                     <Carousel.Caption>
                         <h3 style={{color: '#343a40', paddingTop: '3rem'}}>Full-Stack Software Developer</h3>
-                        <p style={{color: '#343a40'}}>Trained by Makers Academy School for Software Engineering, London</p>
+                        <p style={{color: '#343a40'}}>Trained by Makers Academy, a school for Software Engineering, London</p>
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -30,9 +30,9 @@ export default function Home() {
                     <br></br>
                     <ul style={{color: '#343a40', textAlign: 'left'}}>
                         <li><strong>Languages:</strong> JavaScript, Node.js, Ruby, SQL, HTML, CSS, basic Python</li>
-                        <li><strong>Framework, libraries, databases</strong> React, Redux, Express, Rails, Flask, Postgres, MongoDB</li>
+                        <li><strong>Framework, libraries, databases:</strong> React, Redux, Express, Rails, Flask, Postgres, MongoDB</li>
                         <li><strong>TDD Testing:</strong> RSpec, Jasmine, Jest, Unittest, Capybara</li>
-                        <li><strong>Other Tech:</strong> Command Line, Github, TravisCI, Heroku, AWS</li>
+                        <li><strong>Other Tech:</strong> Command Line, Github, TravisCI, Heroku</li>
                         <li><strong>Methodology:</strong> AGILE working environment, pair programming, daily stand-ups and retros, planning 2-day sprints, MVP, Trello Board and various project design by using diagrams and wireframe</li>
                         <li><strong>Public Projects:</strong> AgeUK</li>
                     </ul>

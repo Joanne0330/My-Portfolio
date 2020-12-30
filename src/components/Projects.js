@@ -22,12 +22,21 @@ class Projects extends React.Component {
         newDataArr: [],
         data:[
             {
+                title: "Dev Connector",
+                src: DevConnector,
+                description: "A social network for developers made from MERN stack, showcasing their experiences, education, and Github projects. Users are also able to make posts and comments to each others ",
+                tech: "React, Redux, Node.js, Express, MongoDB",
+                link: "https://github.com/Joanne0330/DevConnectorMERN",
+                key: 1,
+                language: "JavaScript"
+            },
+            {
                 title: "AIsha - Artificial Intelligence Self Help App",
                 src: AIsha,
                 description: "A machine learning chatbot which analyses, responds to, and tracks users' daily emotions (joy, sadness, anger and fear) in a form of graph. This was my final project at Makers Academy",
                 tech: "React, Flask, Python",
                 link: "https://github.com/aravzpatel/AIsha",
-                key: 1,
+                key: 2,
                 language: "JavaScript"
             },
             {
@@ -36,7 +45,7 @@ class Projects extends React.Component {
                 description: "A hybrid of Instagram and Facebook social media",
                 tech: "Ruby, Rails, MongoDB",
                 link: "https://github.com/Joanne0330/Jem-Photoshare",
-                key: 2,
+                key: 3,
                 language: "Ruby"
             },
             {
@@ -45,18 +54,9 @@ class Projects extends React.Component {
                 description: "An interactive, traditional tetris game built with pure Vanilla JavaScript",
                 tech: "JavaScript",
                 link: "https://github.com/Joanne0330/Tetris-interactive-game",
-                key: 3,
-                language: "JavaScript"
-            
-            },
-            {
-                title: "Dev Connector",
-                src: DevConnector,
-                description: "A social network for developers, showcasing their experiences, education, and Github projects. Able to make posts and comments to each other ",
-                tech: "React, Redux, Node.js, Express, MongoDB",
-                link: "https://github.com/Joanne0330/DevConnectorMERN",
                 key: 4,
                 language: "JavaScript"
+            
             },
             {
                 title: "Dreambook",
